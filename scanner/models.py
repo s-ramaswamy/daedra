@@ -10,4 +10,5 @@ class Movie(models.Model):
     coverurl  = models.URLfield()
     genre     = models.CharField(max_length = 100)
 
-    
+    def __unicode__(self):
+        return self.title
